@@ -1,0 +1,15 @@
+<template>
+  <h1>${message}</h1>
+  <style>
+    ul {
+      margin-bottom: 20px;
+    }
+  </style>
+  <h1>Navigation Back Cancelation Test</h1>
+  <ul>
+    <li>Click the Next Page button to navigate to the next page.</li>
+    <li>Click the Back with Cancel button. Notice the navigation is stopped by canDeactivate().</li>
+    <li>Click the Back with Cancel button again. Navigation is NOT stopped, which is wrong.</li>
+  </ul>
+  <router-view></router-view>
+</template>
